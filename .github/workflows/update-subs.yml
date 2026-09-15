@@ -1,8 +1,8 @@
-name: 更新订阅文件并刷新 README
+name: 自动更新订阅文件并刷新
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # 每2小时自动更新
+    - cron: '0 */12 * * *'  # 每12小时自动更新（UTC时区，整点0分执行）
   workflow_dispatch:      # 支持手动触发
 
 jobs:
